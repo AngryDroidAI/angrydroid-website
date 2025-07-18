@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace; /* Pixel-like font */
+            text-align: center;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            animation: scroll 15s linear infinite; /* Scroll effect */
+        }
+        img {
+            max-width: 80%; /* Responsive image size */
+            margin: 20px 0; /* Space between images */
+        }
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.discordapp.com/attachments/1194326260025921637/1387871674107564165/Screenshot_2024-01-07_130140.png?ex=685eebb8&is=685d9a38&hm=4a3b80b0514ac7bc29764e7c50efe7306007e119097e26677b86b32876bb6410" alt="Image 1">
+        <img src="https://cdn.discordapp.com/attachments/1194326260025921637/1387871674388451609/Screenshot_rgfgtrhg.png?ex=685eebb8&is=685d9a38&hm=4a98283d95008e6c9b94e8bfeba70d3635bbe80c5700f6e0e02f9ee98a6025e3" alt="Image 2">
+        <img src="https://cdn.discordapp.com/attachments/1194326260025921637/1387871674652688576/Screenshot_2024-01-07_130042.png?ex=685eebb8&is=685d9a38&hm=166a1b3aa27c9ef568b1b7a3aad2e4e0696366fc72d6283c6e379494b18571a9" alt="QR Code">
+    </div>
+</body>
+</html>
